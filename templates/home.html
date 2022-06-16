@@ -39,13 +39,13 @@
                 Counties
               {% endif %}
             </th>
-            <th scope="col">Confirmed</tr>
+            <td scope="col">Confirmed</td>
                 </tr>
         </thead>
         <tbody>
     {% for pair in pairs %}
     <tr>
-    <td>{{ pair[0]}}</td>
+    <th>{{ pair[0]}}</th>
     <td>{{ pair[1]}}</td>
     </tr>
     {% endfor %}

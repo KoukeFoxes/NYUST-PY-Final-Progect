@@ -2,9 +2,14 @@
 body {
     background-color: black;
     color: white;
+
 }
 h1, td, tr {
     color: white;
+}
+
+.col-4 {
+  overflow: hidden;
 }
 
 table{
@@ -27,7 +32,6 @@ table th{
   color: white;
   text-align: center;
   padding: 10px 0;
-  height: 1.1em;
 }
 
 table th:after{

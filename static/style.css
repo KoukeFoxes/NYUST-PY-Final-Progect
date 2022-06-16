@@ -11,7 +11,8 @@ h1, td, tr {
 .col-4 {
   overflow: scroll;
   overflow-x: hidden;
-  height: 708px;
+  height: 710px
+  margin-bottom: 10px;
 }
 
 .col-4 > thead {
@@ -57,7 +58,7 @@ table td{
   text-align: left;
   width: 70%;
   text-align: center;
-  background-color: #eee;
+  background-color: #FFFF;
   padding: 10px 0;
 }
 

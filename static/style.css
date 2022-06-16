@@ -9,8 +9,12 @@ h1, td, tr {
 }
 
 .col-4 {
-  overflow: hidden;
+  overflow: scroll;
   height: 708px;
+}
+
+.col-4 > thead {
+  position: sticky;
 }
 
 table{

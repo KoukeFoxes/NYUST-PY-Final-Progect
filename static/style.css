@@ -15,7 +15,7 @@ h1, td, tr {
     -webkit-transition: padding 0.3s ease-in-out;
     transition: padding 0.3s ease-in-out;
     margin-left: 30px;
-    text-decoration: none;
+   
   }
   
   .bn47:before {
@@ -35,6 +35,7 @@ h1, td, tr {
   
   .bn47:hover {
     padding: 0.75rem 2.25rem;
+    text-decoration: none;
   }
   
   .bn47:hover:before {

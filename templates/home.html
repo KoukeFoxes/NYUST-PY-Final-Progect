@@ -1,0 +1,64 @@
+{% extends "base.html" %} {% block content %}
+<script>
+  function ask() {
+    Swal.fire({
+      title: 'Do you want to save the changes?',
+      showDenyButton: true,
+      showCancelButton: true,
+      confirmButtonText: 'Save',
+      denyButtonText: `Don't save`,
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        Swal.fire('Saved!', '', 'success')
+      } else if (result.isDenied) {
+        Swal.fire('Changes are not saved', '', 'info')
+      }
+    })
+  }
+</script>
+
+<body>
+<div class="container">
+  <div class="row" style="margin: 30px 0;">
+    <h1>COVID-19 Spread Analysis</h1>
+    <a class="bn47" href="{{goto}}">切換地區為 {{reg}}</a>
+  </div>
+  <div class="row">
+    
+    <div class="col-4">
+        <h5><font color="red">{{title}}</font></h5>
+        <p>This data comes from a resource</p>
+        <table class="table-responsive-sm table-dark">
+        <thead>
+            <tr>
+            <th scope="col">
+              {%if title == "Top 15 countries" %}
+                Country
+              {% else %}
+                Counties
+              {% endif %}
+            </th>
+            <th scope="col">Confirmed</tr>
+                </tr>
+        </thead>
+        <tbody>
+    {% for pair in pairs %}
+    <tr>
+    <td>{{ pair[0]}}</td>
+    <td>{{ pair[1]}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+  
+  </div>
+    <div class="col-8">
+        <h5><font color="firebrick">world map of corona cases</font></h5>
+        <p>using the same data we provided an updated map that contains</p>
+        {{cmap|safe}}</div>
+        
+  </div>
+</div>
+</body>
+{% endblock %}

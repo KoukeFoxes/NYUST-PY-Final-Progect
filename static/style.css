@@ -10,6 +10,7 @@ h1, td, tr {
 
 .col-4 {
   overflow: hidden;
+  height: 100%;
 }
 
 table{

@@ -11,13 +11,12 @@ h1, td, tr {
 .col-4 {
   overflow: scroll;
   overflow-x: hidden;
-  height: 710px
-  margin-bottom: 10px;
+  height: 720px
 }
 
-.col-4 > thead {
+/* .col-4 > thead {
   position: sticky;
-}
+} */
 
 table{
   width: 100%;

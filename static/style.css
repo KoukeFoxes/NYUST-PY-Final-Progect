@@ -10,6 +10,7 @@ h1, td, tr {
 
 .col-4 {
   overflow: scroll;
+  overflow-x: hidden;
   height: 708px;
 }
 
